@@ -16,15 +16,15 @@ def relogio():
     if seg < 10:
         seg = f"0{seg}"
     
-    label.config(text=f"{hor}:{mim}:{seg}", font="normal 30", bg="white")
-    app.after(1000,relogio)
+    label.config(text=f"{hor}:{mim}:{seg}", font="normal 30", bg="white", relief="raised", borderwidth=4)
+    app.after(1000, relogio)
 
 
 app = Tk()
 app.title("Relogio Local")
 app.geometry("350x250")
 app.resizable(False, False)
-app["bg"] = "white"
+app["bg"] = "gray"
 
 label = Label(app)
 label.place(x=90, y=100)
