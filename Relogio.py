@@ -27,7 +27,7 @@ app.resizable(False, False)
 app["bg"] = "gray"
 
 label = Label(app)
-label.place(x=90, y=100)
+label.place(x=84, y=100)
 
 relogio()
 
